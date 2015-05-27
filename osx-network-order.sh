@@ -1,0 +1,3 @@
+alias network_service_order_priority_ethernet="echo sudo /usr/sbin/networksetup -ordernetworkservices \\\"Thunderbolt Ethernet\\\" \`/usr/sbin/networksetup -listallnetworkservices | grep -v 'An asterisk ' | sed s/\^'*'// | grep -xv \"Thunderbolt Ethernet\" | sed 's/.*/\"&\"/' | tr '\n' ' ' | sed 's/.$//' | sed 's/\"/\\\\\"/g'\` | bash"
+
+alias network_service_order_priority_wifi="echo sudo /usr/sbin/networksetup -ordernetworkservices \\\"Wi-Fi\\\" \`/usr/sbin/networksetup -listallnetworkservices | grep -v 'An asterisk ' | sed s/\^'*'// | grep -xv \"Wi-Fi\" | sed 's/.*/\"&\"/' | tr '\n' ' ' | sed 's/.$//' | sed 's/\"/\\\\\"/g'\` | bash"
