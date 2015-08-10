@@ -8,5 +8,8 @@ function setup_prompt {
 	export PS1="\n  \D{%F %T}\n$PS1"
 }
 
-export HISTCONTROL=erasedups:ignorespace
 setup_prompt
+
+# These commands should be organized into a separate file
+shopt -s histverify
+export HISTCONTROL=erasedups:ignorespace
