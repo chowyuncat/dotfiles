@@ -8,7 +8,7 @@ function setup_prompt {
     if [ "${__git_rev_local}" != "${__git_rev_upstream}" ]; then
         local __git_rev="${red}*$__git_rev_local / $__git_rev_upstream"
     else
-        local __git_rev="${purple}$__git_rev_local"
+        local __git_rev="$__git_rev_local"
     fi
 
     printf "(${__git_branch}) ${__git_rev} ${default_color}"
