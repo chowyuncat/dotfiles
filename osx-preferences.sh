@@ -1,6 +1,5 @@
-# Finder: sow hidden files
+# Finder: show hidden files
 defaults write com.apple.finder AppleShowAllFiles -bool true
-
 
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
