@@ -24,3 +24,7 @@ export PS1="\n ^-- \D{%F %T}\n\n$PS1"
 shopt -s histverify
 export HISTCONTROL=erasedups:ignorespace
 set -o ignoreeof
+
+
+# I prefer vim bindings to emacs
+set -o vi
