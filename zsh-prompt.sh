@@ -45,6 +45,9 @@ function zle-keymap-select() {
   zle -R
 }
 
+# require explicit logout command
+set -o ignoreeof
+
 zle -N zle-keymap-select
 
 function vi_mode_prompt_info() {
